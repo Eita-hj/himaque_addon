@@ -153,7 +153,7 @@
             if (kaji_weaponData.kaji_amari == 0)
               return alert("これ以上の強化は行えません");
             if (able <= 0) {
-              kaji_weaponData.kaji[type] = kaji_weaponData.kaji_amari;
+              kaji_weaponData.kaji[type] += kaji_weaponData.kaji_amari;
             } else {
               kaji_weaponData.kaji[type] = able;
             }
