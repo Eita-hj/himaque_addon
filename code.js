@@ -1,6 +1,5 @@
 (function () {
   const version = "2.0.0";
-  const c = _0x5952cb;
   layercount++;
   if (globalThis.addonVersion !== version) {
     $("#layerroot").append(
