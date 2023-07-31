@@ -1,16 +1,51 @@
 {
 	"name": "himaque-addon",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "addon of HIMACHATQUEST",
-	"main": "main.js",
+	"main": "./src/main.js",
 	"scripts": {
 		"start": "electron ./src",
-		"build-mac": "electron-packager ./src ヒマクエ+アドオン --platform=darwin --arch=x64 --overwrite",
-		"build-win": "electron-packager ./src ヒマクエ+アドオン --platform=win32 --arch=x64 --overwrite",
-		"build-linux": "electron-packager ./src ヒマクエ+アドオン --platform=linux --arch=armv7l --overwrite"
+		"build-mac": "electron-builder -m --universal",
+		"build-win": "electron-builder -w --x64",
+		"build-linux": "electron-builder -l deb tar.xz",
+		"build-all": "electron-builder -lmw"
 	},
 	"devDependencies": {
 		"electron": "^25.3.2",
-		"electron-packager": "^17.1.1"
-	}
+		"electron-builder": "^24.6.3"
+	},
+	"build": {
+		"appId": "electron.himaqueaddon.app",
+		"productName": "HIMACHATQUEST + Addon",
+		"directories": {
+			"output": "dist"
+		},
+		"files": [
+			"assets",
+			"src",
+			"package.json",
+			"package-lock.json"
+		],
+		"linux": {
+			"icon": "assets/icon.png",
+			"target": "tar.gz"
+		}
+		"mac": {
+			"icon": "assets/icon.icns",
+			"target": [
+				"dmg"
+			]
+		},
+		"win": {
+			"icon": "assets/icon.ico",
+			"target": "nsis"
+		},
+		"nsis": {
+			"oneClick": false,
+			"allowToChangeInstallationDirectory": true
+		},
+		"publish": null
+	},
+	"author": "eita(No.16762)",
+	"email": "sgr.9661.ea@gmail.com"
 }
