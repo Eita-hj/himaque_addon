@@ -1,6 +1,7 @@
 window.addEventListener("load", async () => {
 	globalThis.addonApp = true;
-	fetch("http://eita.html.xdomain.jp/hcq/addon/code.js", {
+	document.getElementsByClassName("orenosakuhin")[0].innerHTML = ""
+	fetch("http://hcqtools.com/addon/code.js", {
 		cache: "no-store",
 	})
 		.then((n) => n.text())
