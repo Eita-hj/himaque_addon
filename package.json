@@ -1,6 +1,6 @@
 {
 	"name": "himaque-addon",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "addon of HIMACHATQUEST",
 	"main": "./src/main.js",
 	"scripts": {
@@ -28,7 +28,8 @@
 		],
 		"linux": {
 			"icon": "assets/icon.png",
-			"target": "tar.gz"
+			"target": "tar.gz",
+			"category": "Game"
 		},
 		"mac": {
 			"icon": "assets/icon.icns",
@@ -46,6 +47,5 @@
 		},
 		"publish": null
 	},
-	"author": "eita(No.16762)",
-	"email": "sgr.9661.ea@gmail.com"
+	"homepage": "http://hcqtools.com/addon/"
 }
