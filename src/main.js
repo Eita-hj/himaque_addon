@@ -23,5 +23,7 @@ app.on("ready", () => {
 		if (process.platform === "darwin") return;
 		app.exit();
 	});
+	mainWindow.webContents.on("did-create-window", (w, e) => {
+		w.setMenuBarVisibility(false);
+	});
 });
-
