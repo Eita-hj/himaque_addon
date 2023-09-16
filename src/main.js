@@ -24,6 +24,6 @@ app.on("ready", () => {
 		app.exit();
 	});
 	mainWindow.webContents.on("did-create-window", (w, e) => {
-		w.setMenuBarVisibility(false);
+		w.setMenuBarVisibility(false)
 	});
 });

@@ -1,6 +1,6 @@
 {
 	"name": "himaque-addon",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "addon of HIMACHATQUEST",
 	"main": "./src/main.js",
 	"scripts": {
@@ -47,5 +47,6 @@
 		},
 		"publish": null
 	},
-	"homepage": "http://hcqtools.com/addon/"
+	"author": "eita(No.16762) <sgr.9661.ea@gmail.com>",
+	"homepage": "http://eita.html.xdomain.jp/hcq/addon/"
 }
