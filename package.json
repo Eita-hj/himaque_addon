@@ -1,6 +1,6 @@
 {
 	"name": "himaque-addon",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "addon of HIMACHATQUEST",
 	"main": "./src/main.js",
 	"scripts": {

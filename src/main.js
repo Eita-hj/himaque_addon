@@ -14,7 +14,7 @@ app.on("ready", () => {
 	app.on("activate", () => {
 		if (!BrowserWindow.getAllWindows().length) createWindow();
 	});
-	mainWindow.loadURL("http://himaquest.com/");
+	mainWindow.loadURL("https://himaquest.com/");
 	mainWindow.once("ready-to-show", () => {
 		mainWindow.show();
 	});
